@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gazelle_sim_ltu_campus</name>
+  <version>0.0.1</version>
+  <description>GazelleSim LTU campus map</description>
+
+  <maintainer email="dbutani@ltu.edu">Devson Butani</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

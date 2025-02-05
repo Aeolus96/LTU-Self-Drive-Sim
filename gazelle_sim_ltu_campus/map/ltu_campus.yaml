@@ -1,0 +1,8 @@
+# Field image file name
+field_image_file: 'ltu_campus.png'
+
+# Image file scaling and center
+pixels_per_meter: 4
+x_center_img: 1000
+y_center_img: 1000
+img_view_scale: 0.4
