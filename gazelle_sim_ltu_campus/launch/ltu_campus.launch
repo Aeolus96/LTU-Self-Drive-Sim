@@ -26,8 +26,8 @@
   <group ns="robot1">
     <rosparam command="load" file="$(find gazelle_sim_ltu_campus)/robot/ACTor.yaml" />
     <rosparam>
-      Xr_init: 0.0
-      Yr_init: -10.0
+      Xr_init: -2.5
+      Yr_init: -7.75
       Theta_init: deg(0.0)
     </rosparam>
   </group>

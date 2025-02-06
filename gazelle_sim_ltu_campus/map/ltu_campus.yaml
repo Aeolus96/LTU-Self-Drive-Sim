@@ -1,8 +1,17 @@
 # Field image file name
-field_image_file: 'ltu_campus.png'
+field_image_file: 'circle_drive_1.png'
 
 # Image file scaling and center
-pixels_per_meter: 4
-x_center_img: 1000
-y_center_img: 1000
-img_view_scale: 0.4
+pixels_per_meter: 250
+x_center_img: 5000
+y_center_img: 5000
+img_view_scale: 0.1
+
+# # Field image file name
+# field_image_file: 'ltu_campus_map_upscaled_20k.png'
+
+# # Image file scaling and center
+# pixels_per_meter: 40
+# x_center_img: 10000
+# y_center_img: 10000
+# img_view_scale: 0.05
