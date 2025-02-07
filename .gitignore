@@ -49,3 +49,5 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+es_image_to_steering/models/reduced.keras
+es_image_to_steering/models/best.keras
