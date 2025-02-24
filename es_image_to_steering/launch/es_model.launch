@@ -3,13 +3,25 @@
     <!-- Input arguments -->
     <arg name="input_image_topic" default="robot1/camera/image_raw" />
     <arg name="output_twist_topic" default="robot1/cmd_vel" />
-    <arg name="model_path" default="$(find es_image_to_steering)/models/minimal.keras" />
+    <arg name="model_path" default="$(find es_image_to_steering)/models/quarter-size.keras" />
+    <arg name="output_distance_topic" default="robot1/distance_traveled" />
+    <arg name="input_odom_topic" default="robot1/odom" />
+
+    <!-- Start Gazelle Sim -->
+    <include file="$(find gazelle_sim_ltu_campus)/launch/ltu_campus.launch" />
 
     <!-- Start the model node -->
     <node pkg="es_image_to_steering" type="run_model.py" name="es_model" output="screen">
         <param name="input_image_topic" value="$(arg input_image_topic)" />
         <param name="output_twist_topic" value="$(arg output_twist_topic)" />
         <param name="model_path" value="$(arg model_path)" />
+    </node>
+
+    <!-- Start Data Collection Node -->
+    <node pkg="es_image_to_steering" type="run_data_collection.py" name="data_collection"
+        output="screen">
+        <param name="output_distance_topic" value="$(arg output_distance_topic)" />
+        <param name="input_odom_topic" value="$(arg input_odom_topic)" />
     </node>
 
 </launch>
