@@ -1,0 +1,22 @@
+Model,Time Limit (minutes), Speed (m/s), Rotation Direction, Distance (meters);
+Baseline, 10, 2, CCW, 1200.026;
+Optimized, 10, 2, CCW, 1200.072;
+Half-Sized, 10, 2, CCW, 1200.206;
+Quarter-Sized, 10, 2, CCW, 1200.169;
+Baseline, 10, 3, CCW, 1800.147;
+Optimized, 10, 3, CCW, 1800.162;
+Half-Sized, 10, 3, CCW, 1800.102;
+Quarter-Sized, 10, 3, CCW, 1800.132;
+Baseline, 60, 4, CCW, 14400.408;
+Optimized, 60, 4, CCW, DNF;
+Half-Sized, 60, 4, CCW, DNF;
+Quarter-Sized, 60, 4, CCW, 14400.400;
+
+Baseline, 60, 2, CCW, 7200.026;
+Optimized, 60, 2, CCW, 7200.177;
+Half-Sized, 60, 2, CCW, 7200.053;
+Quarter-Sized, 60, 2, CCW, 7200.056;
+Baseline, 60, 2, CW, 7200.108;
+Optimized, 60, 2, CW, 7200.170;
+Half-Sized, 60, 2, CW, 7200.215;
+Quarter-Sized, 60, 2, CW, 7200.134;

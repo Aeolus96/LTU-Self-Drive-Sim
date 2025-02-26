@@ -55,4 +55,4 @@ es_image_to_steering/models/optimized.keras
 es_image_to_steering/models/half-size.keras
 es_image_to_steering/models/baseline.keras
 .vscode/settings.json
-es_image_to_steering/collected_data.csv
+/.vscode
