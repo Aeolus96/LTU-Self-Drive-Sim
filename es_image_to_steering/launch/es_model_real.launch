@@ -1,0 +1,15 @@
+<launch>
+
+    <!-- Input arguments -->
+    <arg name="input_image_topic" default="/vehicle/" />
+    <arg name="output_twist_topic" default="/actor/cmd_vel" />
+    <arg name="model_path" default="$(find es_image_to_steering)/models/quarter-size.keras" />
+
+    <!-- Start the model node -->
+    <node pkg="es_image_to_steering" type="run_model.py" name="es_model" output="screen">
+        <param name="input_image_topic" value="$(arg input_image_topic)" />
+        <param name="output_twist_topic" value="$(arg output_twist_topic)" />
+        <param name="model_path" value="$(arg model_path)" />
+    </node>
+
+</launch>
