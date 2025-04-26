@@ -1,17 +1,36 @@
-# Field image file name
-field_image_file: 'circle_drive_1.png'
-
-# Image file scaling and center
-pixels_per_meter: 250
-x_center_img: 5000
-y_center_img: 5000
-img_view_scale: 0.05
-
-# # Field image file name
-# field_image_file: 'ltu_campus_map_upscaled_20k.png'
+### Circle drive 1
+# field_image_file: 'circle_drive_1.png' # Field image file name
 
 # # Image file scaling and center
+# pixels_per_meter: 250
+# x_center_img: 5000
+# y_center_img: 5000
+# img_view_scale: 0.05
+
+### LTU Campus Map
+# field_image_file: 'ltu_campus_map_upscaled_20k.png' # Field image file name
 # pixels_per_meter: 40
 # x_center_img: 10000
 # y_center_img: 10000
 # img_view_scale: 0.05
+
+### Straight road 1
+# field_image_file: "straight_road_1.png" # Field image file name
+# pixels_per_meter: 65
+# x_center_img: 600
+# y_center_img: 4000
+# img_view_scale: 0.25
+
+### Curved Road 1
+# field_image_file: 'curved_road_1.png' # Field image file name
+# pixels_per_meter: 100
+# x_center_img: 2000
+# y_center_img: 2000
+# img_view_scale: 0.25
+
+### Curved Road 2
+field_image_file: "curved_road_2.png" # Field image file name
+pixels_per_meter: 65
+x_center_img: 768
+y_center_img: 0
+img_view_scale: 0.5

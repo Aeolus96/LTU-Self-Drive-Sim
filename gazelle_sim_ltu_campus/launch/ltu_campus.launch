@@ -25,10 +25,29 @@
   <!-- Define robot1 -->
   <group ns="robot1">
     <rosparam command="load" file="$(find gazelle_sim_ltu_campus)/robot/ACTor.yaml" />
-    <rosparam>
+    <!-- Circle Road -->
+    <!-- <rosparam>
       Xr_init: -2.5
       Yr_init: -7.75
       Theta_init: deg(0.0)
+    </rosparam> -->
+    <!-- Straight Road -->
+    <!-- <rosparam>
+      Xr_init: 1.1
+      Yr_init: 2
+      Theta_init: deg(90.0)
+    </rosparam> -->
+    <!-- Curved Road 1 -->
+    <!-- <rosparam>
+      Xr_init: 12
+      Yr_init: -16
+      Theta_init: deg(90.0)
+    </rosparam> -->
+    <!-- Curved Road 2 -->
+    <rosparam>
+      Xr_init: -8
+      Yr_init: -15
+      Theta_init: deg(51.0)
     </rosparam>
   </group>
 

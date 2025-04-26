@@ -2,7 +2,7 @@
 
 import collections
 
-import cv2
+import cv2  # noqa
 import keras
 import numpy as np
 import rospy
@@ -12,6 +12,12 @@ from geometry_msgs.msg import Twist
 from sensor_msgs.msg import Image
 
 from es_image_to_steering.cfg import EsSteeringConfig
+
+
+# Normalization Layer
+class NormalizationLayer(keras.layers.Layer):
+    def call(self, inputs):
+        return inputs / 255 - 0.5
 
 
 # Smoothing classes
@@ -85,7 +91,9 @@ if __name__ == "__main__":
     Server(EsSteeringConfig, dyn_rcfg_cb)
 
     # Load model
-    model = keras.models.load_model(rospy.get_param("~model_path"), safe_mode=False)
+    model = keras.models.load_model(
+        rospy.get_param("~model_path"), custom_objects={"NormalizationLayer": NormalizationLayer}
+    )
     model.summary()
 
     # Publisher

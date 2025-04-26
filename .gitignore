@@ -56,3 +56,9 @@ es_image_to_steering/models/half-size.keras
 es_image_to_steering/models/baseline.keras
 .vscode/settings.json
 /.vscode
+es_image_to_steering/models/baseline_AVG.keras
+es_image_to_steering/models/baseline_AVGm.keras
+es_image_to_steering/models/baseline_FS1.keras
+es_image_to_steering/models/baseline_FS1m.keras
+es_image_to_steering/models/baseline_FS2.keras
+es_image_to_steering/models/baseline_FS2m.keras
